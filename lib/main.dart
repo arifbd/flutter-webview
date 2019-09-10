@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
                 IconButton(
                   icon: const Icon(Icons.power_settings_new),
                   onPressed: () {
-                    flutterWebViewPlugin.goBack()?? SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+                    SystemChannels.platform.invokeMethod('SystemNavigator.pop');
                   },
                 ),
               ],
